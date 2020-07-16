@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0402097124BFE58A00407B1F /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402097024BFE58A00407B1F /* TodoDetailView.swift */; };
+		0402097324BFE64500407B1F /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402097224BFE64500407B1F /* TodoListView.swift */; };
 		040324CF2493BEDF0053D345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040324CE2493BEDF0053D345 /* AppDelegate.swift */; };
 		040324D12493BEDF0053D345 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040324D02493BEDF0053D345 /* SceneDelegate.swift */; };
 		040324D32493BEDF0053D345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040324D22493BEDF0053D345 /* ContentView.swift */; };
@@ -15,7 +17,22 @@
 		040324DB2493BEE00053D345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040324D92493BEE00053D345 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		046BC82D24BD4FD000F4DA10 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0402097024BFE58A00407B1F /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
+		0402097224BFE64500407B1F /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		040324CB2493BEDF0053D345 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040324CE2493BEDF0053D345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040324D02493BEDF0053D345 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +41,8 @@
 		040324D72493BEE00053D345 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		040324DA2493BEE00053D345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040324DC2493BEE00053D345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046BC81D24BD4FCF00F4DA10 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		046BC81F24BD4FCF00F4DA10 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				040324CD2493BEDF0053D345 /* SwiftUIDemo */,
+				046BC81C24BD4FCF00F4DA10 /* Frameworks */,
 				040324CC2493BEDF0053D345 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +83,8 @@
 				040324D92493BEE00053D345 /* LaunchScreen.storyboard */,
 				040324DC2493BEE00053D345 /* Info.plist */,
 				040324D62493BEE00053D345 /* Preview Content */,
+				0402097024BFE58A00407B1F /* TodoDetailView.swift */,
+				0402097224BFE64500407B1F /* TodoListView.swift */,
 			);
 			path = SwiftUIDemo;
 			sourceTree = "<group>";
@@ -75,6 +97,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		046BC81C24BD4FCF00F4DA10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				046BC81D24BD4FCF00F4DA10 /* WidgetKit.framework */,
+				046BC81F24BD4FCF00F4DA10 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +116,7 @@
 				040324C72493BEDF0053D345 /* Sources */,
 				040324C82493BEDF0053D345 /* Frameworks */,
 				040324C92493BEDF0053D345 /* Resources */,
+				046BC82D24BD4FD000F4DA10 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -101,7 +133,7 @@
 		040324C32493BEDF0053D345 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Thien Chu";
 				TargetAttributes = {
@@ -148,7 +180,9 @@
 			files = (
 				040324CF2493BEDF0053D345 /* AppDelegate.swift in Sources */,
 				040324D12493BEDF0053D345 /* SceneDelegate.swift in Sources */,
+				0402097324BFE64500407B1F /* TodoListView.swift in Sources */,
 				040324D32493BEDF0053D345 /* ContentView.swift in Sources */,
+				0402097124BFE58A00407B1F /* TodoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +317,7 @@
 		040324E02493BEE00053D345 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
@@ -303,6 +338,7 @@
 		040324E12493BEE00053D345 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";

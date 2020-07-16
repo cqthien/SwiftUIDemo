@@ -12,19 +12,24 @@ struct ContentView: View {
     @State var red: Double
     @State var green: Double
     @State var blue: Double
-    
+
     var body: some View {
-        
         VStack {
             Rectangle()
                 .foregroundColor(Color(red: red, green: green, blue: blue))
                 .modifier(VulcanModifier())
-            
+
             VStack {
                 ColorSlider(value: $red, textColor: .red)
                 ColorSlider(value: $green, textColor: .green)
                 ColorSlider(value: $blue, textColor: .blue)
             }
+
+            Button("Reset", action: {
+                self.red = 0.5
+                self.green = 0.5
+                self.blue = 0.5
+            })
         }
     }
 }
@@ -38,7 +43,7 @@ struct ContentView_Previews: PreviewProvider {
 struct ColorSlider: View {
     @Binding var value: Double
     var textColor: Color
-    
+
     var body: some View {
         HStack {
             Text("0")
